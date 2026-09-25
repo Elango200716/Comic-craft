@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Export Complete · ComicCraft{% endblock %}
+{% block content %}
+<section class="card centered">
+  <div class="success-icon">✓</div>
+  <h1>Your comic PDF is ready!</h1>
+  <p>Your generated comic has been exported successfully.</p>
+  {% if pdf_url %}<a class="button" href="{{ pdf_url }}" download>Download PDF</a>{% endif %}
+  <a class="button secondary" href="/">Create Another Comic</a>
+</section>
+{% endblock %}
